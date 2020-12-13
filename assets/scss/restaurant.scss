@@ -1,0 +1,31 @@
+$primary: #98b411;
+$secondary: #dddddd;
+$dark: #333333;
+
+.horaire {
+    background-color: $primary;
+    color: $secondary;
+
+    h4 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h5 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+.restau-content {
+    width: 100%;
+    height: 70vh;
+
+    iframe {
+        width:400px;
+        height: 400px;
+    }
+}

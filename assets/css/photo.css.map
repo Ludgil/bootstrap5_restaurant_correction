@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAC,CACN,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CAChB",
+    "sources": [
+        "../scss/photo.scss"
+    ],
+    "names": [],
+    "file": "photo.css"
+}

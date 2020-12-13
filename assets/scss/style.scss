@@ -1,0 +1,140 @@
+@import '../bootstrap/bootstrap.scss';
+$primary: #98b411;
+$secondary: #dddddd;
+$dark: #333333;
+
+html {
+  font-size: 10px!important;
+  
+}
+body{
+  font-size: 1.6rem;
+  background: $secondary;
+  font-family: 'Baskervville', serif;
+}
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  background-color: $dark;
+  border-bottom: 2px solid $primary;
+}
+
+.logo {
+  margin: 5px;
+  width: 100px;
+  height: auto;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 2rem;
+  color: $primary!important;
+  margin-right: 40px;
+  margin-left: 40px;
+  
+  &:hover{
+
+    &::before{
+      display: inline-block;
+    }
+  }
+  &::before{
+    content:'';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    background:$primary;
+    display:none;
+    left:-25px;
+    bottom:30%;
+  }
+}
+
+.jumbotron {
+  width: 100%;
+  height: 30vh;
+  border-bottom: 2px solid $primary ;
+}
+
+.jumbotron-cover {
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../img/sushi.jpg);
+  background-image: linear-gradient(to bottom, rgba(90, 90, 90, 0.6) 0%,rgba(90, 90, 90, 0.6) 100%), url(../img/sushi_2.jpg);
+}
+
+.card {
+  border-radius: 15px;
+  height: 450px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  
+  .card-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: $primary;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+// #jumbotron{
+//   height: 60vh;
+//   overflow: hidden;
+//   position: relative;
+
+//   #img_1{
+//     position: absolute;
+//     top: -200px;
+//     animation-delay: 0s;
+//     animation-duration: 12s;
+//     animation-name: fade;
+//     animation-iteration-count: infinite;
+
+//   }
+//   #img_2{
+//     position: absolute;
+//     top:-500px;
+//     animation-delay: 8s;
+//     animation-duration: 12s;
+//     animation-name: fade;
+//     animation-iteration-count: infinite;
+//   }
+//   #img_3{
+//     position: absolute;
+//     top:-400px;
+//     animation-delay: 4s;
+//     animation-duration: 12s;
+//     animation-name: fade;
+//     animation-iteration-count: infinite;
+//   }
+// }
+
+// @-webkit-keyframes fade {
+//   0% {
+//     opacity: 0;
+//   }
+//   20% {
+//     opacity: 1;
+//   }
+//   33% {
+//     opacity: 1;
+//   }
+//   53% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }

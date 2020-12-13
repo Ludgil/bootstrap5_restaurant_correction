@@ -1,0 +1,30 @@
+$primary: #98b411;
+$secondary: #dddddd;
+$dark: #333333;
+
+.nav-pills {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $primary;
+}
+
+
+.pill-link {
+    &::before{
+        content:'';
+        width:0;
+        height:0;
+      }
+}
+
+.active#pills-menu-tab, .active#pills-entrees-tab, .active#pills-plats-tab, .active#pills-desserts-tab, .active#pills-boissons-tab {
+    background-color: $primary;
+    color: $secondary!important;
+}
+
+.badge {
+    background-color: $primary;
+}
+
+.border-b {
+    border-bottom: 1px solid $primary;
+}
